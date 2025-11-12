@@ -68,3 +68,15 @@ svg#certificate {
     display: block;
     margin: 0 auto;
 }
+
+/* Initially hide certificate elements until valid data is loaded */
+#cert-header,
+#certificate {
+    display: none !important;
+}
+
+/* Show certificate elements when they don't have the hidden class */
+#cert-header:not(.hidden),
+#certificate:not(.hidden) {
+    display: block !important;
+}
